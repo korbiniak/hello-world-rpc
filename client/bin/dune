@@ -1,0 +1,6 @@
+(executable
+ (public_name hello_world_client)
+ (name client)
+ (libraries core core_unix.command_unix hello_world_client)
+ (preprocess
+  (pps ppx_jane)))

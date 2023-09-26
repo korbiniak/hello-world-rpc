@@ -1,0 +1,6 @@
+(library
+ (inline_tests)
+ (name hello_world_protocol)
+ (libraries core babel async)
+ (preprocess
+  (pps ppx_inline_test ppx_jane)))

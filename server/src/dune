@@ -1,0 +1,11 @@
+(library
+ (inline_tests)
+ (name hello_world_server)
+ (libraries
+  core
+  core_unix.command_unix
+  async.log_extended
+  async
+  hello_world_protocol)
+ (preprocess
+  (pps ppx_inline_test ppx_jane)))
