@@ -8,3 +8,15 @@ between client and the server.
 
 I've learned this stuff during my Jane Streets internship this year. I'll probably use
 this repository as a handy example for my future OCaml code.
+
+## Usage
+
+To run the server, run from the root directory:
+
+    $ dune exec -- ./server/bin/server.exe -log-level debug
+    [INFO] ("Spinning up server"(where_to_listen((socket_type((family PF_INET)(socket_type SOCK_STREAM)))(address 0.0.0.0:8080)(listening_on <opaque>))))
+
+To make a call, run the client:
+
+    $ dune exec -- ./client/bin/client.exe hello-world "Ciao" "Franek"
+    Ciao, Franek!
